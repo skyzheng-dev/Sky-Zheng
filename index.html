@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- left side navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a style="font-size: 50px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button onclick="closeNav(); aboutMe()">About Me</button>
+        <a href="https://docs.google.com/document/d/1MhWH4SsAKDfwxst3TkkzhaKZa_LfgevKxRs3PacX494/edit?usp=sharing" target="_blank">Resume</a>
+        <button onclick="closeNav(); openContact()">Contact</button>
+    </div>
+
+    <!-- invert color button -->
+    <!-- <div>
+        <button class="invert-button" onclick="invertColors()">Invert Colors</button>
+    </div> -->
+
+    <!-- left side navigation bar -->
+    <div style="padding: 3%;">
+        <span id="sidebar-threelines" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- main contents and everything -->
+    <div id="main">
+        <!-- main contents -->
+        <div class="main-contents">
+            <h1><span id="name">Sky Zheng</span><br>Software Engineer / Designer</h1>
+            <a class = "mc-buttons" href="https://docs.google.com/document/d/1MhWH4SsAKDfwxst3TkkzhaKZa_LfgevKxRs3PacX494/edit?usp=sharing" target="_blank">Resume</a>
+            <button class = "mc-buttons" onclick="aboutMe()" style="margin-top: 20px;">About Me</button>
+        </div>
+
+        <!-- right navigation links -->
+        <div id="rightNav">
+            <p style="text-decoration: underline;">Contents</p>
+            <button onclick="scrollToPage('myProjects')">PROJECTS</button>
+            <button onclick="scrollToPage('myExperience')">EXPERIENCE</button>
+            <button onclick="scrollToPage('myFriends')">FRIENDS</button>
+            <button onclick="scrollToPage('myFooter')">CONTACT</button>
+        </div>
+
+        <!-- presentation slide show elements-->
+        <div id="aboutMe" class="home"> 
+            <a href="https://skyzheng-dev.github.io/Sky-Zheng/">Home</a>
+            <h1>Sky Zheng</h1>
+            <img class="me2" src="me.png">
+        </div>
+        <div id="aboutMe2"> 
+            <h1>About Me:</h1>
+            <p> Hi! 😊👋 I'm Sky Zheng and I'm currently a Freshman studying computer science at the 
+                University of Missouri (Columbia, MO) 🐯. I grew up in a Chinese family of 5 as the 
+                eldest son. I have a younger brother (1 year younger) and a younger sister (4 years 
+                younger). Being a first generation student is not easy. Although there are countless
+                opportunities and experiences for me to explore 🔍, it will be hard because I have 
+                limited guidance. I'm a pioneer 🗺️ for my family and it's my job and responsibility to
+                pave a road for their future, especially for my brother and sister because they will 
+                soon follow this path. With this much responsibilities in my hands 🙌, I expect myself 
+                to live up to it and hopefully find an opportunity some time in the future that 
+                will allow me to prove my abilities. 😊
+            </p>
+        </div>
+    </div>
+
+    <!-- my projects page -->
+    <div id="myProjects">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <a style="background-image: url(Flappy_Bird_Preview.png); background-size: cover;" href="https://skyzheng-dev.github.io/flappy_bird_game/" target="_blank"></a>
+            <a style="background-image: url(Simon_Preview.png); background-size: cover;" href="https://skyzheng-dev.github.io/simon_game/" target="_blank"></a>
+            <a style="background-image: url(RPS_Preview.png); background-size: cover;" href="https://skyzheng-dev.github.io/rps_game/" target="_blank"></a>
+            <a style="background-image: url(Clock_Preview.jpg); background-size: cover;" href="https://skyzheng-dev.github.io/clock_n_timer/" target="_blank"></a>
+            <a style="background-image: url(Tetris_Preview.jpg); background-size: cover;" href="https://skyzheng-dev.github.io/tetris_game/" target="_blank"></a>
+            <a style="background-image: url(Capy_Preview.png); background-size: cover;" href="https://skyzheng-dev.github.io/poor_capy/" target="_blank"></a>
+        </div>
+    </div>
+
+    <!-- my exprience page -->
+    <div id="myExperience">
+        <h1>Experience</h1>
+        <div class="experience">
+            <h2><span>Education:</span><br>Freshman - University of Missouri (Columbia, MO)</h2>
+            <p>Hi! My name is Sky Zheng and I'm currently a Freshman studying computer science at the 
+                University of Missouri (Columbia, MO). Here at Mizzou, there are countless opportunities
+                to meet new people and create connections. Attending a big school meant access to career
+                fairs that provide many job opportunities as well as greater competition with fellow peers. 
+                I wouldn't say I'm very competitive but if it's something I'm passionate about, I strive 
+                to do my best to attain/accomplish it. During my free time, I like going to the Mizzou
+                rec to hangout with my friends or just play volleyball, badminton, pickelball, etc. with
+                them. So far, Mizzou has been a journey for me; it's a journey of adjustment, discovery, 
+                and growth. Although there's still much to explore and experience, I stay optimistic 
+                and feel excited about the countless opportunities and experiences waiting for me. 
+            </p>
+            <!-- add an image to this page -->
+            <img class="me" src="me.png">
+            <h2>Computer Science:</h2>
+            <p>I enjoy coding very much. I started coding during my freshman year of highshool, and, at 
+                that time, coding wasn't really a passion; I was just exploring different fields but I did
+                take a liking to computers. I realized too late that coding is a big passion of mine until
+                senior year. I started watching a lot of Youtube videos about coding and realized that 
+                there are people who can create something from nothing right from scratch and that 
+                amazed me. So, those videos inspired me to actually start coding with a passion and 
+                love for coding. This momentum, inspiration, and passion for coding is what pushes
+                me thus far. I enjoy creating projects I'm passionate about and I will not stop until it's
+                finished, especially if it's a web development project. With this passion, I hope to learn
+                more about computer coding in the future and expand my knowledge and connections in this 
+                field that I had wished I had taken a liking earlier as a highshool kid.
+            </p>
+        </div>
+    </div>
+
+    <!-- my education page -->
+    <div id="myFriends">
+        <h1>Friends</h1>
+        <div class="friends">
+            <a href="https://www.linkedin.com/in/alexander-rhodes-988606328/" target="_blank">AJ Rhodes
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/raphaelrealina/" target="_blank">Raf Realina
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+            </a>
+            <a href="tel:+1-816-534-2553" target="_blank">Hans Filart
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Amember%3A709693361&keywords=aakash%20unnam&origin=RICH_QUERY_SUGGESTION&position=0&sid=suq&spellCorrectionEnabled=false" target="_blank">Aakash Unnam
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+            </a>
+            <a href="tel:+1-636-295-9663" target="_blank">Raj Patel
+                <div class="hoverEffect">
+                    <div></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- contact popup from the bottom -->
+    <div id="CONTACT"> 
+        <h1>Contact</h1>
+        <p style="padding-top: 30px;">Phone: <a href="tel:+18162866025" target="_blank">816-286-6025</a></p><br>
+        <p>Email: <a href="mailto:sky.zheng2019@gmail.com" target="_blank">sky.zheng2019@gmail.com</a> </p><br>
+        <button onclick="contactBackToHome()">Back</button>
+    </div>
+
+    <footer>
+        <div id="myFooter"> 
+            <div class="social-media">
+                <!-- snapchat button -->
+                <a href="https://snapchat.com/t/G22VUHgN" target="_blank"><img src="snapchat_logo.png"></a> 
+                <!-- discord button -->
+                <a href="https://discordapp.com/users/918889621105049650" target="_blank"><img src="discord_logo.png"></a>
+                <!-- tiktok button -->
+                <a href="https://www.tiktok.com/@notmakingonlywatching?_t=8sJlbUv9GwA&_r=1" target="_blank"><img src="tiktok_logo.jpg"></a>
+            </div>
+    
+            <div class="main-links">
+                <a onclick="scrollToHome()">HOME</a>
+                <span>|</span>
+                <a onclick="scrollToPage('myProjects')">MY PROJECTS</a>
+                <span>|</span>
+                <a onclick="scrollToPage('myExperience')">EXPERIENCE</a>
+                <span>|</span>
+                <a onclick="scrollToPage('myFriends')">FRIENDS</a>
+            </div>
+    
+            
+            <button onclick="openContact()">Contact</button><br><br>
+            
+            <!-- found a bug? -->
+            <a onclick="openContact()" class="bug" >Found a bug?</a>
+        </div>
+    </footer>
+    <script src="bio.js"></script>
+</body>
+
+</html>
